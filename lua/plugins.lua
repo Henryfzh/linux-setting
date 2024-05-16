@@ -21,6 +21,10 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "williamboman/nvim-lsp-installer",
     {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
         config = function()

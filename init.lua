@@ -26,3 +26,4 @@ vim.cmd [[
   augroup END
 ]]
 
+require('lualine').setup()
