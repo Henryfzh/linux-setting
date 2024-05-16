@@ -30,3 +30,19 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
 
+-- Keymaps for plugins
+-- Define the leader key as space
+vim.g.mapleader = ' '
+
+-- Load nvim-tree
+require'nvim-tree'.setup{}
+
+-- Key mappings
+local map = vim.api.nvim_set_keymap
+
+-- Open nvim-tree with space+ft
+map('n', '<leader>ft', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+map('n', '<leader>ff', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
+map('n', '<A-l>', ':BufferNext<CR>', { noremap = true, silent = true })
+map('n', '<A-h>', ':BufferPrevious<CR>', { noremap = true, silent = true })
+    
