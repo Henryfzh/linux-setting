@@ -45,4 +45,6 @@ map('n', '<leader>ft', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 map('n', '<leader>ff', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 map('n', '<A-l>', ':BufferNext<CR>', { noremap = true, silent = true })
 map('n', '<A-h>', ':BufferPrevious<CR>', { noremap = true, silent = true })
-    
+map('n', '<M-t>', ':ToggleTerm<CR>', { noremap = true, silent = true })
+map('n', '<M-f>', '<cmd>ToggleTerm direction=float<CR>', {noremap = true, silent = true})
+map('t', '<M-c>', '<C-\\><C-n>:q<CR>', { noremap = true, silent = true })

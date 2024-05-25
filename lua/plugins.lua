@@ -21,6 +21,9 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "williamboman/nvim-lsp-installer",
     {
+        'akinsho/toggleterm.nvim', version = "*", config = true
+    },
+    {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
@@ -74,4 +77,5 @@ require("mason-lspconfig").setup({
     ensure_installed = { "pyright", "rust_analyzer", "tsserver" },
     automatic_installation = true,
 })
+require('lspconfig')['pyright'].setup{}
 
