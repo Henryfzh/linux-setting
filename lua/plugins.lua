@@ -19,7 +19,6 @@ require("lazy").setup({
     "williamboman/mason-lspconfig.nvim", -- Integration between Mason and nvim-lspconfig
     "jose-elias-alvarez/null-ls.nvim", -- null-ls for integrating linters and formatters
     "neovim/nvim-lspconfig",
-    "williamboman/nvim-lsp-installer",
     {
         'akinsho/toggleterm.nvim', version = "*", config = true
     },
