@@ -73,7 +73,7 @@ require("lazy").setup({
 -- Mason setup
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "pyright", "rust_analyzer", "tsserver" },
+    ensure_installed = { "pyright", "rust_analyzer" },
     automatic_installation = true,
 })
 require('lspconfig')['pyright'].setup{}
